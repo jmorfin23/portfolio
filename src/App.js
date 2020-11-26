@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import { CarouselContainer } from './component/carousel/carousel-container'; 
 import { AboutCard } from './component/aboutCard'; 
-// admin panel 
-// image and picture info
+import { ArrowIcon } from './component/UI/index'; 
+// make an admin panel 
+// when a new image is added add the new picture an info 
 // AWS s3 
-// local state 
+// no state management system 
 // express server w/ api's 
-// admin jtw 
+// admin tokens 
 
 class App extends Component {
   constructor(props) {
@@ -18,9 +19,22 @@ class App extends Component {
     }; 
   }
   render() {
+    const { active } = this.state;
     return (
+      <>
       <div className="main">
+        <div className="box1">
+        {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
+        </div>
+        <div className="box2">
+        {active ? <CarouselContainer /> : <AboutCard />} 
+        </div>
+        <div className="box3">
+        {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
+        </div>
       </div>
+      <div className="testdiv"></div>
+      </>
     );
   }
 }

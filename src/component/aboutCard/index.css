@@ -1,4 +1,14 @@
 .about-card__container {
     text-align: center;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: lightcoral;
+    padding: 1em; 
+    height: 80vh;
+    max-width: 40vw;
 }
+
+.about-card__image img {
+    border-radius: 50%; 
+    border: 1px solid #ffff;
+};
