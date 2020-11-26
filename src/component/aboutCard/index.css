@@ -5,7 +5,10 @@
     background: lightcoral;
     padding: 1em; 
     height: 80vh;
-    max-width: 40vw;
+    margin-top: 10vh;
+    overflow: auto;
+    width: inherit;
+    animation-name: about-card;
 }
 
 .about-card__image img {

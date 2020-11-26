@@ -23,20 +23,37 @@ class App extends Component {
     return (
       <>
       <div className="main">
-        <div className="box1">
-        {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
-        </div>
-        <div className="box2">
-        {active ? <CarouselContainer /> : <AboutCard />} 
-        </div>
-        <div className="box3">
-        {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
+        <div className="row no-gutters">
+          <div className="col-md-4 d-flex justify-content-center align-items-center">
+            {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/>}
+          </div>
+          <div className="col-md-4 col-sm-8 col-10 col-10 d-flex justify-content-center align-items-center">
+            {!active ? <AboutCard /> : <CarouselContainer />}
+          </div>
+          <div className="col-md-4 d-flex justify-content-center align-items-center">
+            {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/>}
+          </div>
         </div>
       </div>
-      <div className="testdiv"></div>
       </>
     );
   }
 }
 
 export default App;
+
+
+//  <>
+//       <div className="main">
+//         <div className="box1">
+//         {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
+//         </div>
+//         <div className="box2">
+//         {active ? <CarouselContainer /> : <AboutCard />} 
+//         </div>
+//         <div className="box3">
+//         {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
+//         </div>
+//       </div>
+//       <div className="testdiv"></div>
+//       </> 
