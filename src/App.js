@@ -3,6 +3,8 @@ import './App.css';
 import { CarouselContainer } from './component/carousel/carousel-container'; 
 import { AboutCard } from './component/aboutCard'; 
 import { ArrowIcon } from './component/UI/index'; 
+import { Footer } from './component/footer'; 
+
 // make an admin panel 
 // when a new image is added add the new picture an info 
 // AWS s3 
@@ -21,6 +23,7 @@ class App extends Component {
   render() {
     const { active } = this.state;
     return (
+<<<<<<< HEAD
       <>
       <div className="main">
         <div className="row no-gutters">
@@ -36,6 +39,22 @@ class App extends Component {
         </div>
       </div>
       </>
+=======
+      <div className="site-wrapper">
+        <div className={`content-container ${active ? "direction-reverse" : "direction-normal"}`}>
+        <div className="content-box">
+        {active && <ArrowIcon direction="left" width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
+        </div>
+        <div className="content-box content-box-middle">
+        {active ? <CarouselContainer /> : <AboutCard />} 
+        </div>
+        <div className="content-box">
+        {!active && <ArrowIcon direction="right" width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
+        </div>
+      </div>
+      <Footer />
+      </div>
+>>>>>>> no-bootstrap
     );
   }
 }
