@@ -23,23 +23,6 @@ class App extends Component {
   render() {
     const { active } = this.state;
     return (
-<<<<<<< HEAD
-      <>
-      <div className="main">
-        <div className="row no-gutters">
-          <div className="col-md-4 d-flex justify-content-center align-items-center">
-            {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/>}
-          </div>
-          <div className="col-md-4 col-sm-8 col-10 col-10 d-flex justify-content-center align-items-center">
-            {!active ? <AboutCard /> : <CarouselContainer />}
-          </div>
-          <div className="col-md-4 d-flex justify-content-center align-items-center">
-            {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/>}
-          </div>
-        </div>
-      </div>
-      </>
-=======
       <div className="site-wrapper">
         <div className={`content-container ${active ? "direction-reverse" : "direction-normal"}`}>
         <div className="content-box">
@@ -54,7 +37,6 @@ class App extends Component {
       </div>
       <Footer />
       </div>
->>>>>>> no-bootstrap
     );
   }
 }

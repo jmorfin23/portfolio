@@ -4,23 +4,12 @@
     background: lightcoral;
     padding: 1em; 
     height: 80vh;
-<<<<<<< HEAD
-    margin-top: 10vh;
-    overflow: auto;
-    width: inherit;
-    animation-name: about-card;
-}
-=======
     overflow: auto;
 } */
->>>>>>> no-bootstrap
 
 .about-card__image img {
     border-radius: 50%; 
     border: 1px solid #ffff;
-<<<<<<< HEAD
-};
-=======
     background: url('../../assets/static/images/profile-image.jpg') no-repeat;
     background-size: cover; 
     height: 200px; 
@@ -28,4 +17,3 @@
 };
 
 
->>>>>>> no-bootstrap

@@ -5,14 +5,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 1em; 
     background: lightcoral;
-<<<<<<< HEAD
-    margin-top: 10vh;
-    width: inherit; 
-}
-=======
     overflow: auto;
 } */
->>>>>>> no-bootstrap
 
 .slide-list {
     list-style-type: none;

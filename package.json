@@ -38,11 +38,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "eslint": "^7.14.0",
-    "prettier": "2.2.0"
-=======
     "eslint": "^7.14.0"
->>>>>>> no-bootstrap
   }
 }
