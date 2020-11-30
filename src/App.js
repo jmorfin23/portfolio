@@ -3,6 +3,8 @@ import './App.css';
 import { CarouselContainer } from './component/carousel/carousel-container'; 
 import { AboutCard } from './component/aboutCard'; 
 import { ArrowIcon } from './component/UI/index'; 
+import { Footer } from './component/footer'; 
+
 // make an admin panel 
 // when a new image is added add the new picture an info 
 // AWS s3 
@@ -21,20 +23,20 @@ class App extends Component {
   render() {
     const { active } = this.state;
     return (
-      <>
-      <div className="main">
-        <div className="box1">
-        {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
+      <div className="site-wrapper">
+        <div className={`content-container ${active ? "direction-reverse" : "direction-normal"}`}>
+        <div className="content-box">
+        {active && <ArrowIcon direction="left" width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
         </div>
-        <div className="box2">
+        <div className="content-box content-box-middle">
         {active ? <CarouselContainer /> : <AboutCard />} 
         </div>
-        <div className="box3">
-        {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
+        <div className="content-box">
+        {!active && <ArrowIcon direction="right" width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
         </div>
       </div>
-      <div className="testdiv"></div>
-      </>
+      <Footer />
+      </div>
     );
   }
 }

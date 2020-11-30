@@ -1,11 +1,12 @@
 import React from 'react'; 
 import './index.css'; 
+//import Profile_Image from '../../assets/static/images/profile-image.jpg'; 
 
 export const AboutCard = () => {
     return(
-        <div className="about-card__container">
+        <div className="about-card__container card">
             <div className="about-card__image">
-                <img src="https://placehold.it/50x50" />
+                <img />
             </div>
             <div className="about-card__text">
                 <h2>Jonathan Morfin</h2>

@@ -1,0 +1,10 @@
+.footer {
+    padding: 20px 40px 60px 40px; 
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.flex-footer {
+    display: flex; 
+    justify-content: space-between;
+}
