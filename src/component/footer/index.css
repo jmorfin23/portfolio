@@ -1,10 +1,97 @@
 .footer {
     padding: 20px 40px 60px 40px; 
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000;
+    opacity: 0.8; 
 }
 
 .flex-footer {
     display: flex; 
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+/* General properties for each container */
+.flex-properties {
+    flex: 1;
+    display: flex; 
+    min-width: 300px; 
+    padding: 15px;
+}
+/* ======================================= */
+
+.footer-copywrite {
+    justify-content: flex-start;
+    color: #fff; 
+    opacity: .8; 
+}
+
+.footer-nav {
+    justify-content: center;
+}
+
+.footer-links {
+    justify-content: flex-end;
+}
+
+.footer-links a {
+    margin-left: 12px;
+    color: #fff;
+    opacity: .8;
+}
+.footer-links a:hover {
+    opacity: 1; 
+}
+
+
+
+/* Nav tag transition and display */
+
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: block; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav li a {
+    padding: 0px 12px 0 12px; 
+    color: #fff;
+    text-decoration: none;  
+    display: block;
+    opacity: 0.8; 
+    transition: opacity 0.35s ease-in-out;
+}
+
+.nav li a:hover {
+    opacity: 1; 
+}
+
+.nav li a::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0; 
+    opacity: 1; 
+    transition: all 0.35s ease-in-out;
+}
+.nav li a:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1084px) {
+    .footer-copywrite {
+        justify-content: center;
+    }
+    .footer-links {
+        justify-content: center;
+    }
+}  
+
+
+/* ========================================= */

@@ -1,60 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import { CarouselContainer } from './component/carousel/carousel-container'; 
-import { AboutCard } from './component/aboutCard'; 
-import { ArrowIcon } from './component/UI/index'; 
+import { Switch, Route } from 'react-router-dom'; 
+import { Home } from './views/home'; 
+import { Projects } from './views/projects'; 
+import { Contact } from './views/contact'; 
 import { Footer } from './component/footer'; 
 
-// make an admin panel 
-// when a new image is added add the new picture an info 
-// AWS s3 
-// no state management system 
-// express server w/ api's 
-// admin tokens 
-
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      active: false
-    }; 
-  }
   render() {
-    const { active } = this.state;
     return (
       <div className="site-wrapper">
-        <div className={`content-container ${active ? "direction-reverse" : "direction-normal"}`}>
-        <div className="content-box">
-        {active && <ArrowIcon direction="left" width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
-        </div>
-        <div className="content-box content-box-middle">
-        {active ? <CarouselContainer /> : <AboutCard />} 
-        </div>
-        <div className="content-box">
-        {!active && <ArrowIcon direction="right" width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
-        </div>
-      </div>
-      <Footer />
+        <Switch>
+          <Route exact path={"/home"} render={() => <Home /> }/>
+          <Route exact path={"/projects"} render={() => <Projects /> } />
+          <Route exact path={"/contact"} render={() => <Contact /> }/>
+        </Switch>
+        <Footer /> 
       </div>
     );
   }
 }
 
 export default App;
-
-
-//  <>
-//       <div className="main">
-//         <div className="box1">
-//         {active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> } 
-//         </div>
-//         <div className="box2">
-//         {active ? <CarouselContainer /> : <AboutCard />} 
-//         </div>
-//         <div className="box3">
-//         {!active && <ArrowIcon width="6em" height="6em" onClick={() => this.setState({active: !active})}/> }
-//         </div>
-//       </div>
-//       <div className="testdiv"></div>
-//       </> 
