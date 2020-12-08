@@ -1,19 +1,16 @@
 .sidebar {
-    position: fixed;
+    position: relative;
     height: 100%;
     background-color: lightcoral;
-    width: 350px;
-    left: -350px;
-    transition: all 1s ease-in-out;
+    width: 28vw; 
+    left: 0;
+    /* transition: all 1s ease-in-out; */
 }
 .active {
-    left: 0;
+    left: -28vw;
+    width: 0;
 }
 
-.sidebar ul {
-    margin: 0; 
-    padding: 0; 
-}
 
 .sidebar ul li {
     padding: 10px;
@@ -21,23 +18,6 @@
     margin-left: 10px;
 }
 
-.sidebar .toggle-button {
-    position: absolute;
-    left: 370px; 
-    top: 20px;
-}
-
-.sidebar .toggle-button:hover {
-    cursor: pointer;
-}
-
-.sidebar .toggle-button span {
-    display: block;
-    width: 30px; 
-    height: 4px; 
-    background-color: #000;
-    margin: 5px;
-}
 
 /* profile section */
 .profile {
@@ -54,3 +34,26 @@
 }
 
 /* =============== */
+
+
+@media only screen and (max-width: 850px) {
+    .sidebar {
+        width: 100%; 
+        height: auto; 
+    }
+    .profile {
+        display: none; 
+    }
+
+    .active {
+        height: 0;
+        left: 0;
+        width: 100%;
+        top: -114px;
+        display: flex;
+    }
+
+    .sidebar ul {
+        text-align: center;
+    }
+}
