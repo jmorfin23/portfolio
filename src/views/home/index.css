@@ -1,8 +1,6 @@
 .content-container {
-    flex-grow: 1; 
-    position: relative;
     height: 100%;
     text-align: center;
-    z-index: -1;
-    margin-right: 60px;
+    flex: 2; 
+    flex-basis: 540px;
 }

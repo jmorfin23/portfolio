@@ -9,6 +9,13 @@ import { ToggleButton } from './component/toggleButton';
 import { Resume } from './views/resume'; 
 // import { Footer } from './component/footer'; 
 
+// TODO: 
+// 1. border box issue boxes are adding border size 
+// 2. transition issues 
+// 3. proper html boxes (section, nav, article, main...)
+// 4. proper css formatting and using proper rules 
+// 5. sidebar creating components ? / reusable button 
+// 6. take out pixels and replace with relative units 
 
 class App extends Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 .toggle-button {
-    position: relative;
+    position: fixed;
     margin: 10px;
 }
 
@@ -14,3 +14,5 @@
     background-color: #000;
     margin: 5px;
 }
+
+/* Button is not displayed when viewport width > 650 */

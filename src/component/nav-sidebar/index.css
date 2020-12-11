@@ -1,11 +1,9 @@
 
 /*  ------ General ----- */
 .sidebar {
-    position: relative;
+    /* position: relative; */
     height: 100%;
     background-color: #5bb66f;
-    width: 22vw; 
-    left: 0;
     text-align: center;
     overflow: hidden;
     padding: 20px;
@@ -13,11 +11,12 @@
     flex-flow: column;
     /* transition: all 1s ease-in-out; */
     color: #fff;
+    flex-grow: 1;
+    flex: 1;
+    min-width: 250px;
 }
 .active {
-    left: -20vw;
-    padding: 0;
-    width: 0;
+    display: none;
 }
 
 /*       Nav - Links      */
@@ -138,38 +137,3 @@
 
 
 /*               Media                */
-@media only screen and (max-width: 850px) {
-    .sidebar {
-        width: 100%; 
-        height: auto; 
-        padding: 0;
-    }
-
-    .profile, .social-links, .hire-me {
-        display: none; 
-    }
-
-    .active {
-        height: 0;
-        left: 0;
-        width: 100%;
-        top: -114px;
-        display: flex;
-    }
-
-    .nav-links ul {
-        padding: 0;
-    }
-
-    .nav-links ul li {
-        border-bottom: 1px solid rgba(50, 53, 80, 0.3);
-    }
-
-    .nav-links ul li:hover {
-        background-color: #fff;
-        /* color: rgb(50, 53, 80); */
-        /* border: 3px solid rgb(50, 53, 80); */
-    }
-    
-
-}
