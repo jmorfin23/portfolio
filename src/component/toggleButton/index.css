@@ -1,6 +1,8 @@
 .toggle-button {
     position: fixed;
     margin: 10px;
+    padding: 2px;
+    border-radius: 4px;
 }
 
 .toggle-button:hover {
@@ -11,8 +13,29 @@
     display: block;
     width: 30px; 
     height: 4px; 
-    background-color: #000;
     margin: 5px;
 }
 
-/* Button is not displayed when viewport width > 650 */
+.bt-black {
+    border: 2px solid #000;
+}
+
+.bt-black span {
+    background-color: #000;
+}
+
+.bt-white {
+    border: 2px solid #fff;
+}
+
+.bt-white span {
+    background-color: #fff; 
+}
+
+/* toggle button not displayed when sidebar is in full screen mode */
+
+@media only screen and (min-width: 850px) {
+    .toggle-button {
+        display: none; 
+    }
+}

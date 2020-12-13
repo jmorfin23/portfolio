@@ -1,0 +1,16 @@
+.profile img {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fff; 
+    width: 145px; 
+    height: 145px; 
+}
+
+.profile p {
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.profile h3 {
+    padding-bottom: 20px;
+}

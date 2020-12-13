@@ -1,0 +1,30 @@
+/*       Nav - Links      */
+
+.nav-links ul {
+    padding: 15px;
+    border-bottom: 1px solid rgba(50, 53, 80, 0.3);
+    border-top: 1px solid rgba(50, 53, 80, 0.3);
+}
+
+.nav-links ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.nav-links ul li i {
+    margin: 0 5px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul li a:hover {
+    color: rgb(50, 53, 80);
+}
+
+.active-link {
+    color: rgb(50, 53, 80)!important;
+}
+

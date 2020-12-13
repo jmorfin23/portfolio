@@ -2,6 +2,8 @@ import React from 'react';
 
 export const Contact = () => {
     return(
-        <h1>this is the contacts view</h1>
+        <div className="view-content">
+            <h1>this is the contact view</h1>
+        </div>
     )
 }
