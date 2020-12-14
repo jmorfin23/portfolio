@@ -2,9 +2,9 @@ import React from 'react';
 import './index.css'; 
 import PropTypes from 'proptypes'; 
 
-export const ToggleButton = ({ toggleNav, toggle }) => {
+export const ToggleButton = ({ toggleNav }) => {
     return(
-        <div className={`toggle-button ${toggle ? "bt-black" : "bt-white"}`} onClick={() => toggleNav()}>
+        <div className={`toggle-button`} onClick={() => toggleNav()}>
             <span></span>
             <span></span>
             <span></span>
@@ -14,5 +14,4 @@ export const ToggleButton = ({ toggleNav, toggle }) => {
 
 ToggleButton.propTypes = {
     toggleNav: PropTypes.func.isRequired,
-    toggle: PropTypes.bool.isRequired
 }

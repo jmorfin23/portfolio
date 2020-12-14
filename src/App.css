@@ -2,7 +2,6 @@
 html, body, #root {
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 body {
     margin: 0!important; 
@@ -20,24 +19,25 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
-    margin: 15px;
-}
-
 
 
 /* site container style */
 .site-wrapper {
     width: inherit; 
     height: inherit;
-    display: flex; 
-    flex-wrap: wrap;
 }
-
 
 /* style for each view page */
 .view-content {
-    height: 100%;
-    text-align: center;
-    flex: 1 1 auto;
+    height: auto;
+    overflow: auto;
+    flex: 4;
+}
+
+
+@media only screen and (min-width: 850px) {
+    .site-wrapper {
+        display: flex; 
+        flex-wrap: wrap;
+    }
 }

@@ -9,14 +9,17 @@ import { HireMe } from '../hire-me';
 export const SideBar = () => {
     const [toggle, setToggle] = useState(false); 
     return(
-        <>
-            <div className={`sidebar${toggle ? " sidebar-hidden" : ""}`}>
+        <header className={`sidebar-container${toggle ? " height-auto" : ""}`}>
+            <div className="sidebar-heading">
+                <ToggleButton toggleNav={() => setToggle(!toggle)} />
+                <h3>Jonathan Morfin</h3>
+            </div>
+            <div className={`sidebar-content${toggle ? " sidebar-hidden" : ""}`}>
                 <ProfileInfo /> 
                 <SocialLinks /> 
                 <NavLinks hideSideBar={() => setToggle(true)}/> 
                 <HireMe /> 
-            </div>
-            <ToggleButton toggle={toggle} toggleNav={() => setToggle(!toggle)} /> 
-        </>
+            </div> 
+        </header>
     )
 };

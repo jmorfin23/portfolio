@@ -14,6 +14,8 @@ import { Resume } from './views/resume';
 // 4. proper css formatting and using proper rules 
 // 5. pixels issue
 
+// responsive issue
+// add hamburger menu to top 
 // add view-content class below 
 
 class App extends Component {

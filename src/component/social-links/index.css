@@ -4,7 +4,7 @@
 .social-links a {
     text-align:center;
     background-color: #fff;
-    color:  #5bb66f;
+    color:  #54B689;
 	width: 28px;
 	height: 28px;
 	border-radius: 100%;
@@ -23,7 +23,7 @@
     text-decoration:none;
   }
 .social-links {
-    padding: 15px;
+    /* padding: 15px; */
     display: flex;
     justify-content: center;
 }
