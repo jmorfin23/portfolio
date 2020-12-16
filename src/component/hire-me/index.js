@@ -4,7 +4,7 @@ import { Button } from '../Ui/button';
 
 export const HireMe = () => {
     return(
-        <div className="hire-me">
+        <div className="hire-me margin-top-sm">
             <Button type="button"><i className="fas fa-user-friends"></i>Hire Me</Button>
         </div>
     )

@@ -9,7 +9,7 @@ import { HireMe } from '../hire-me';
 export const SideBar = () => {
     const [toggle, setToggle] = useState(false); 
     return(
-        <header className={`sidebar-container${toggle ? " height-auto" : ""}`}>
+        <header className={`sidebar-container padding-sm${toggle ? " height-auto" : ""}`}>
             <div className="sidebar-heading">
                 <ToggleButton toggleNav={() => setToggle(!toggle)} />
                 <h3>Jonathan Morfin</h3>

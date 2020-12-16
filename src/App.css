@@ -19,7 +19,84 @@ body {
     box-sizing: border-box;
 }
 
+/*     colors     */
+:root {
+    --green: #54B689;
+    --white: #fff; 
+    --black: #000; 
+    --dark-blue: rgb(50, 53, 80); 
+    --light-dark-blue: rgba(50, 53, 80, 0.3); 
+    --shaded-white: #fafafa;
+}
 
+/*      font-size      */
+.fs-09 {
+    font-size: .9rem;
+}
+.fs-1 {
+    font-size: 1rem;
+}
+.fs-15 {
+    font-size: 1.5rem;
+}
+
+.fs-25 {
+    font-size: 2.5rem;
+}
+
+
+/*     font weight      */
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+
+
+/*      margin      */
+
+.margin-bot-md {
+    margin-bottom: 2rem; 
+}
+.margin-top-xsm {
+    margin-top: .5rem; 
+}
+
+.margin-top-sm {
+    margin-top: 1rem; 
+}
+
+.margin-xsm {
+    margin: .5rem;
+}
+
+.margin-top-xl {
+    margin-top: 3rem; 
+}
+
+
+/*      padding      */
+.padding-xl {
+    padding: 3rem;
+}
+.padding-sm {
+    padding: 1rem;
+}
+.padding-xsm {
+    padding: .5rem;
+}
+
+.padding-md {
+    padding: 2rem;
+}
+
+.text-centered {
+    text-align: center;
+}
 
 /* site container style */
 .site-wrapper {
@@ -29,15 +106,16 @@ body {
 
 /* style for each view page */
 .view-content {
-    height: auto;
-    overflow: auto;
+    height: inherit;
     flex: 4;
 }
-
 
 @media only screen and (min-width: 850px) {
     .site-wrapper {
         display: flex; 
         flex-wrap: wrap;
+    }
+    .view-content {
+        overflow-y: auto;
     }
 }

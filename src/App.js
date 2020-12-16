@@ -12,11 +12,13 @@ import { Resume } from './views/resume';
 // 2. transition issues 
 // 3. proper html boxes (section, nav, article, main...)
 // 4. proper css formatting and using proper rules 
-// 5. pixels issue
+// 5. pixels issue - use rem unless specific needs 
 
-// responsive issue
-// add hamburger menu to top 
+// responsive issue DONE
+// add hamburger menu to top DONE
+// sidebar-hidden style change - could be confusing in the future 
 // add view-content class below 
+// 
 
 class App extends Component {
   render() {

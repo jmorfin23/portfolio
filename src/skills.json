@@ -1,0 +1,44 @@
+[
+    {
+        "skill": "Javascript", 
+        "icon": "<i class='fab fa-js fa-2x'></i>", 
+        "icon_color": "#F0DB4F",
+        "description": "this is a test description"
+    }, 
+    {
+        "skill": "Node.js", 
+        "icon": "<i class='fab fa-node-js fa-2x'></i>", 
+        "icon_color": "#68A063",
+        "description": "this is a test description"
+    }, 
+    {
+        "skill": "React", 
+        "icon": "<i class='fab fa-react fa-2x'></i>", 
+        "icon_color": "#61DBFB",
+        "description": "this is a test description"
+    }, 
+    {
+        "skill": "Python & Fask", 
+        "icon": "<i class='fab fa-python fa-2x'></i>", 
+        "icon_color": "#4B8BBE",
+        "description": "this is a test description"
+    }, 
+    {
+        "skill": "SQL & PostGreSQL", 
+        "icon": "<i class='fas fa-database fa-2x'></i>", 
+        "icon_color": "#d3d3d3",
+        "description": "this is a test description"
+    }, 
+    {
+        "skill": "HTML5 & CSS3", 
+        "icon": "<i class='fab fa-html5 fa-2x'></i><i class='fab fa-css3-alt fa-2x'></i>", 
+        "icon_color": "#e34c26",
+        "description": "this is a test description"
+    }, 
+    {
+        "skill": "NPM & Yarn", 
+        "icon": "<i class='fab fa-npm fa-2x'></i><i class='fab fa-yarn fa-2x'></i>", 
+        "icon_color": "#BB443E",
+        "description": "this is a test description"
+    }
+]

@@ -4,7 +4,7 @@
 .social-links a {
     text-align:center;
     background-color: #fff;
-    color:  #54B689;
+    color:  var(--green);
 	width: 28px;
 	height: 28px;
 	border-radius: 100%;
@@ -29,7 +29,7 @@
 }
 
 .social-links a:hover {
-    background-color: rgb(50, 53, 80);
+    background-color: var(--dark-blue);
     color: #fff;
 }
 

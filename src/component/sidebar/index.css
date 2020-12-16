@@ -1,17 +1,16 @@
 
 .sidebar-container {
     height: 100%; 
-    background-color: #54B689;
+    background-color: var(--green);
     display: flex;
     flex-flow: column;
-    color: #fff;
+    color: var(--white);
     flex: 1;
     min-width: 275px;
-    padding: 1rem;
 }
 
 .sidebar-content {
-    background-color: #54B689;
+    background-color: var(--green);
     display: flex; 
     flex-flow: column;
     text-align: center;
@@ -19,9 +18,7 @@
 }
 
 /* sets spacing for items inside sidebar */
-.sidebar-content > div, nav, p{
-    padding-top: 1rem;
-}
+
 
 .sidebar-hidden {
     display: none;
@@ -33,7 +30,7 @@
 
 .sidebar-heading {
     position: relative;
-    background-color: #54B689;
+    background-color: var(--green);
     height: auto;
     display: flex;
 }
