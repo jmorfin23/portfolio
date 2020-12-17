@@ -10,37 +10,54 @@ export class ContactForm extends Component {
             name: "", 
             email: "", 
             subject: "", 
-            message: ""
+            message: "", 
+            error: false
         }
     }
 
-    handleSendForm = e => {
+    handleSendForm = async e => {
         e.preventDefault(); 
-        console.log('inside handle send form'); 
+        const { name, email, subject, message } = this.state; 
 
-        console.log(this.state)
+        if (!name || !email || !subject || !message) {
+            return this.setState({error: true}); 
+        }
+
+        // const URL = 'http://localhost:5000/api/contact-email'; 
+        // const response = await fetch(URL); 
+        // const res = await response.json(); 
+
+        // console.log(res); 
     }
 
     render() {
-        const { name, email, subject, message } = this.state; 
+        const { name, email, subject, message, error} = this.state; 
         return(
-            <form className="contact-form margin-top-sm" onClick={e => this.handleSendForm(e)}>
-                <div className="form-row">
-                    <label htmlFor="name">Name</label>
-                    <input onChange={e => this.setState({name: e.target.value})} name="name" value={name}></input>
+            <form className="contact-form" onSubmit={e => this.handleSendForm(e)}>
+                <div className="form-row flex-column">
+                    <div className="form-row">
+                        <div className="form-item align-start">
+                            <input className="padding-xsm fs-1" onChange={e => this.setState({name: e.target.value})} name="name" value={name} placeholder="Name"></input>
+                            {(error && !name) ? (<label className="form-error margin-top-xsm" htmlFor="name">Please fill out your name</label>): null}
+                        </div>
+                        <div className="form-item align-start">
+                            <input className="padding-xsm fs-1" onChange={e => this.setState({email: e.target.value})} name="email" value={email} placeholder="Email"></input>
+                            {(error && !email) ? (<label className="form-error margin-top-xsm" htmlFor="name">Please fill out your email</label>): null}
+                        </div>
+                    </div>
+
+                    <div className="form-item">
+                        <input className="padding-xsm fs-1" onChange={e => this.setState({subject: e.target.value})} name="subject" value={subject} placeholder="Subject"></input>
+                        {(error && !subject) ? (<label className="form-error margin-top-xsm" htmlFor="name">Please add a subject</label>): null}
+                    </div>
+                    <div className="form-item">
+                        <textarea className="padding-xsm fs-1" onChange={e => this.setState({message: e.target.value})} name="message" value={message} rows="18" placeholder="Write your message here."></textarea>
+                        {(error && !message) ? (<label className="form-error margin-top-xsm" htmlFor="name">Please fill out your message</label>): null}
+                    </div>
+                    <div className="form-item">
+                        <Button className="form-submit padding-xsm fs-1" type="submit">Submit</Button>
+                    </div>
                 </div>
-                <div className="form-row">
-                    <label htmlFor="email">Email</label>
-                    <input onChange={e => this.setState({email: e.target.value})} name="email" value={email}></input>
-                </div>
-                <div className="form-row">
-                    <label htmlFor="subject">Subject</label>
-                    <input onChange={e => this.setState({subject: e.target.value})} name="subject" value={subject}></input>
-                </div>
-                <div className="form-row">
-                    <textarea onChange={e => this.setState({message: e.target.value})} name="message" value={message}></textarea>
-                </div>
-                <Button type="submit">Submit</Button>
             </form>
         )
     }
