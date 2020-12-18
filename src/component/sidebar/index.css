@@ -19,7 +19,6 @@
 
 /* sets spacing for items inside sidebar */
 
-
 .sidebar-hidden {
     display: none;
 }
@@ -34,11 +33,6 @@
     height: auto;
     display: flex;
 }
-
-.sidebar-heading h3 {
-    margin: auto;
-}
-
 
 /*               Media                */
 

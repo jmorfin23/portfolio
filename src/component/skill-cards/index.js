@@ -6,13 +6,12 @@ import PropTypes from 'proptypes';
 export const SkillCards = ({ cards }) => {
     return(
         <div className="card-container margin-top-xl">  
-            <div className="card-container">
               {cards && 
                 cards.map((card, index) => (
                     <div key={index} className="card padding-sm margin-bot-md">
                     <div className="icon-container">
                         {card.icon.map((icon, index) => (
-                            <div className="skill-icon" key={index} style={{color: icon.color}}  dangerouslySetInnerHTML={{__html: icon.html}}></div>
+                            <div className="mr-05" key={index} style={{color: icon.color}}  dangerouslySetInnerHTML={{__html: icon.html}}></div>
                         ))}
                     </div>
                     <h3 className="fw-400">
@@ -22,7 +21,6 @@ export const SkillCards = ({ cards }) => {
                     </div>
                 ))
               }
-              </div>
         </div>
     );
 }

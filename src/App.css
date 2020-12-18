@@ -57,6 +57,12 @@ body {
 
 /*      margin      */
 
+.margin-auto {
+    margin: auto;
+}
+.margin-l-r-auto {
+    margin: 0 auto; 
+}
 .margin-bot-md {
     margin-bottom: 2rem; 
 }
@@ -69,15 +75,21 @@ body {
 .margin-top-sm {
     margin-top: 1rem; 
 }
-
 .margin-xsm {
     margin: .5rem;
 }
-
 .margin-top-xl {
     margin-top: 3rem; 
 }
-
+.mr-05 {
+    margin-right: .5rem;
+}
+.mr-1 {
+    margin-right: 1rem;
+}
+.ml-05 {
+    margin-left: .5rem;
+}
 
 /*      padding      */
 .padding-xl {
@@ -117,6 +129,21 @@ textarea:focus {
 .view-content {
     height: inherit;
     flex: 4;
+}
+
+/* common button style - must set color */
+button {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 4px;
+    color: var(--white);
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.8); 
 }
 
 @media only screen and (min-width: 850px) {

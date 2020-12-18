@@ -1,7 +1,5 @@
 .contact-form {
-    margin: auto; 
     max-width: 600px;
-    margin-top: 1rem;
 }
 
 .flex-column {
@@ -12,10 +10,11 @@
     align-self: flex-start;
 }
 
+/* padding and margins set here to avoid clutter in jsx */
 .form-item {
     flex: 1;
     display: flex;
-    padding: 0 .25rem;
+    padding: 0 .25rem; 
     margin-bottom: 1rem;
     flex-direction: column;
 }

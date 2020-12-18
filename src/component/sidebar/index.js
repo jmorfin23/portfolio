@@ -12,7 +12,7 @@ export const SideBar = () => {
         <header className={`sidebar-container padding-sm${toggle ? " height-auto" : ""}`}>
             <div className="sidebar-heading">
                 <ToggleButton toggleNav={() => setToggle(!toggle)} />
-                <h3>Jonathan Morfin</h3>
+                <h3 className="margin-auto">Jonathan Morfin</h3>
             </div>
             <div className={`sidebar-content${toggle ? " sidebar-hidden" : ""}`}>
                 <ProfileInfo /> 

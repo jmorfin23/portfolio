@@ -1,18 +1,12 @@
 /*       Nav - Links      */
 
 .nav-links ul {
-    /* padding: 15px; */
     border-bottom: 1px solid var(--light-dark-blue);
     border-top: 1px solid var(--light-dark-blue);
 }
 
 .nav-links ul li {
-    padding: .5rem;
     list-style: none;
-}
-
-.nav-links ul li i {
-    margin-right: 5px;
 }
 
 .nav-links ul li a {
@@ -21,10 +15,10 @@
 }
 
 .nav-links ul li a:hover {
-    color: rgb(50, 53, 80);
+    color: var(--dark-blue);
 }
 
 .active-link {
-    color: rgb(50, 53, 80)!important;
+    color: var(--dark-blue)!important;
 }
 

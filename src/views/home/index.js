@@ -3,7 +3,8 @@ import './index.css';
 import Jonathan from '../../assets/static/images/jonathan.jpg'; 
 import { SkillCards } from '../../component/skill-cards'; 
 import cards from '../../skills.json'; 
-
+import { Button } from '../../component/Ui/button'; 
+import { Link } from 'react-router-dom'; 
 
 export class Home extends Component {
   render() {
@@ -18,6 +19,10 @@ export class Home extends Component {
                   I enjoy building websites, making music, fitness and more. Check out my portfolio and resume
                   or if your interested in hiring me feel free to send me a message. 
                 </p>
+                <div className="margin-top-md margin-bot-md">
+                  <Button className="profile-btn-1 fs-1 mr-05" type="button"><Link to="/resume">Resume<i className="fas fa-angle-right ml-05"></i></Link></Button>
+                  <Button className="profile-btn-2 fs-1" type="button"><Link to="/contact">Send me a message<i className="fas fa-angle-right ml-05"></i></Link></Button>
+                </div>
             </div>
             <img className="profile-img" src={Jonathan} alt="Jonathan Morfin"></img>
           </section>  

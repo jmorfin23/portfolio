@@ -19,39 +19,26 @@
     min-width: 400px;
 }
 
+.profile-btn-1 a, .profile-btn-2 a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.profile-btn-1 {
+    background-color: var(--green);
+}
+.profile-btn-2 {
+    background-color: var(--dark-blue);
+}
+
 /* skills section */
 
 .skills-heading {
     border-left: 5px solid var(--green);;
 }
 
-/* cards */
-.card-container {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    flex-basis: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 8px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.icon-container {
-    display: flex; 
-}
-
-.skill-icon {
-    margin-right: 5px; 
-}
-
-@media only screen and (max-width: 540px) {
-    .card-container {
-        justify-content: center;
+@media only screen and (max-width: 850px) {
+    .profile-heading {
+        text-align: center;
     }
 }

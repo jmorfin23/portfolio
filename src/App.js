@@ -18,8 +18,11 @@ import { Resume } from './views/resume';
 // add hamburger menu to top DONE
 // sidebar-hidden style change - could be confusing in the future 
 // add view-content class below 
-// 
 
+
+// Daily goal 
+// finish resume page and decide if i want a portfolio page or anther page. 
+// mr-1,2,3, css 
 class App extends Component {
   render() {
     return (

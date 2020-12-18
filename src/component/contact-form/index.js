@@ -54,7 +54,7 @@ export class ContactForm extends Component {
     render() {
         const { name, email, subject, message, error, status } = this.state; 
         return(
-            <form className="contact-form" onSubmit={e => this.handleSendForm(e)}>
+            <form className="contact-form margin-top-sm margin-l-r-auto" onSubmit={e => this.handleSendForm(e)}>
                 <div className="form-row flex-column">
                     <div className="form-row">
                         <div className="form-item align-start">
