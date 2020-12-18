@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './index.css';
 import Jonathan from '../../assets/static/images/jonathan.jpg'; 
-import card_data from '../../skills.json'; 
+import { SkillCards } from '../../component/skill-cards'; 
+import cards from '../../skills.json'; 
+
 
 export class Home extends Component {
   render() {
@@ -23,25 +25,9 @@ export class Home extends Component {
             <div className="fw-200">
               <h1 className="skills-heading padding-sm">What I do</h1>
               <p className="margin-top-sm">I have experience building full stack applications for a variety of clients. Check out my skills below!</p>
-            </div>
-            <div className="card-container margin-top-xl">
-              {card_data &&
-                card_data.map((data, index) => (
-                  <div key={index} className="card padding-sm margin-bot-md">
-                    <div style={{color: data.icon_color}} dangerouslySetInnerHTML={{__html: data.icon}}/>
-                    <h3 className="fw-400">{data.skill}</h3>
-                    <p className="fw-200">{data.description}</p>
-                  </div>
-                ))
-              }
-            </div>
+            </div>    
+              <SkillCards cards={cards}/> 
           </section>
-          {/* <div className="card-container">
-            <div className="card">
-
-            </div>
-
-          </div> */}
         </div>
     );
   }
