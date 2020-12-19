@@ -1,0 +1,27 @@
+/*  Padding added to resume containers because of use with media  */
+
+
+@media only screen and (min-width: 850px) {
+    .resume-container {
+        display: flex; 
+    }
+
+    .resume {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+    }
+    .resume-experience {
+        border-right: 2px solid var(--black);
+        align-items: flex-end;
+        text-align: end;
+        padding-right: 3rem; 
+    }
+
+    .resume-items {
+        align-items: flex-start;
+        text-align: start;
+        padding-left: 3rem;
+    }
+}
+

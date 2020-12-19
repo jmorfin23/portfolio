@@ -1,6 +1,6 @@
 
 {
-    "side_1": {
+    "experience": {
         "title": "Experience",
         "job": [
             {
@@ -23,7 +23,7 @@
             }
         ]
     }, 
-    "side_2": [
+    "items": [
         {
             "category": "Education", 
             "details": ["2014 - 2018", "Biology", "Umass Amherst"] 

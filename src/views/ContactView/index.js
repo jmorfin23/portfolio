@@ -3,7 +3,7 @@ import './index.css';
 import { ContactForm } from '../../component/contact-form'; 
 import { SocialLinks } from '../../component/social-links'; 
 
-export const Contact = () => {
+export const ContactView = () => {
     return(
         <div className="view-content text-centered">
             <div className="contact-heading padding-xl">

@@ -87,6 +87,7 @@ body {
 .margin-bot-xsm {
     margin-bottom: .5rem;
 }
+
 .mr-05 {
     margin-right: .5rem;
 }
@@ -124,6 +125,10 @@ body {
 .padding-l-r-2 {
     padding: 0 2rem;
 }
+.padding-bot-md {
+    padding-bottom: 2rem;
+}
+
 
 /* text-centered */
 .text-centered {
@@ -166,6 +171,10 @@ button:hover {
     filter: brightness(0.8); 
 }
 
+/* =====        media       ===== */
+
+
+/*       changes from flex to normal on smaller devices     */
 @media only screen and (min-width: 850px) {
     .site-wrapper {
         display: flex; 
@@ -173,5 +182,14 @@ button:hover {
     }
     .view-content {
         overflow-y: auto;
+    }
+}
+
+
+/*    adds border and padding to resume page    */
+@media only screen and (max-width: 850px) {
+    .pad-border-mobile {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--light-dark-blue);
     }
 }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'; 
-import { Home } from './views/home'; 
-import { Projects } from './views/projects'; 
-import { Contact } from './views/contact'; 
+import { AboutView } from './views/AboutView'; 
+import { ProjectsView } from './views/ProjectsView'; 
+import { ContactView } from './views/ContactView'; 
 import { SideBar } from './component/sidebar';
-import { Resume } from './views/resume'; 
+import { ResumeView } from './views/ResumeView'; 
 
 // TODO: 
 // 1. border box issue 
@@ -29,10 +29,10 @@ class App extends Component {
       <div className="site-wrapper">
         <SideBar />
         <Switch>
-          <Route exact path={"/about-me"} render={() => <Home /> }/>
-          <Route exact path={"/portfolio"} render={() => <Projects /> } />
-          <Route exact path={"/resume"} render={() =>  <Resume /> }/>
-          <Route exact path={"/contact"} render={() => <Contact /> }/>
+          <Route exact path={"/about-me"} render={() => <AboutView /> }/>
+          <Route exact path={"/portfolio"} render={() => <ProjectsView /> } />
+          <Route exact path={"/resume"} render={() =>  <ResumeView /> }/>
+          <Route exact path={"/contact"} render={() => <ContactView /> }/>
         </Switch>
         {/* <Footer />  */}
       </div>

@@ -6,7 +6,7 @@ import skills from '../../skills.json';
 import { Button } from '../../component/Ui/button'; 
 import { Link } from 'react-router-dom'; 
 
-export class Home extends Component {
+export class AboutView extends Component {
   render() {
     return (
         <div className="view-content"> 
