@@ -63,6 +63,9 @@ body {
 .margin-l-r-auto {
     margin: 0 auto; 
 }
+.margin-xl {
+    margin: 3rem;
+}
 .margin-bot-md {
     margin-bottom: 2rem; 
 }
@@ -81,6 +84,9 @@ body {
 .margin-top-xl {
     margin-top: 3rem; 
 }
+.margin-bot-xsm {
+    margin-bottom: .5rem;
+}
 .mr-05 {
     margin-right: .5rem;
 }
@@ -90,8 +96,19 @@ body {
 .ml-05 {
     margin-left: .5rem;
 }
-
+.mr-3 {
+    margin-right: 3rem;
+}
+.ml-3 {
+    margin-left: 3rem; 
+}
 /*      padding      */
+.pr-3 {
+    padding-right: 3rem;
+}
+.pl-3 {
+    padding-left: 3rem;
+}
 .padding-xl {
     padding: 3rem;
 }
@@ -101,11 +118,14 @@ body {
 .padding-xsm {
     padding: .5rem;
 }
-
 .padding-md {
     padding: 2rem;
 }
+.padding-l-r-2 {
+    padding: 0 2rem;
+}
 
+/* text-centered */
 .text-centered {
     text-align: center;
 }

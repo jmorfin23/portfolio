@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './index.css';
 import Jonathan from '../../assets/static/images/jonathan.jpg'; 
 import { SkillCards } from '../../component/skill-cards'; 
-import cards from '../../skills.json'; 
+import skills from '../../skills.json'; 
 import { Button } from '../../component/Ui/button'; 
 import { Link } from 'react-router-dom'; 
 
@@ -31,7 +31,7 @@ export class Home extends Component {
               <h1 className="skills-heading padding-sm">What I do</h1>
               <p className="margin-top-sm">I have experience building full stack applications for a variety of clients. Check out my skills below!</p>
             </div>    
-              <SkillCards cards={cards}/> 
+              <SkillCards skills={skills.skills}/> 
           </section>
         </div>
     );
