@@ -34,6 +34,11 @@
     display: flex;
 }
 
+/*     Hire Me button Color     */
+.hire-dblue {
+    background-color: var(--dark-blue);
+}
+
 /*               Media                */
 
 /* sidebar always shows when screen > 850px */

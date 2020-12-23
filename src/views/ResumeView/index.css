@@ -2,3 +2,7 @@
 .resume-btns button {
     background-color: var(--green);
 }
+
+.resume-hire-green {
+    background-color: var(--green) ;
+}

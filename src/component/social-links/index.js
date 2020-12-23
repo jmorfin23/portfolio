@@ -3,7 +3,7 @@ import './index.css';
 
 export const SocialLinks = () => {
     return(
-        <div className="social-links margin-top-sm">
+        <div className="social-links mt-1">
             <a href="https://www.linkedin.com/in/jonathanmorfin411/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/jmorfin23/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>

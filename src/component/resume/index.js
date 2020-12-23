@@ -7,7 +7,7 @@ import { ResumeItems } from '../resume-items';
 export const Resume = ({ resume }) => {
     const { experience, items } = resume; 
     return(
-        <div className="resume-container margin-top-xl">
+        <div className="resume-container mt-3">
             <div className="resume resume-experience">
                 <ResumeExperience experience={experience} /> 
             </div>

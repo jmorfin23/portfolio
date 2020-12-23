@@ -1,0 +1,68 @@
+{
+    "projects": [
+        {
+            "name": ["MakeUp Artist Website"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/makeupartist_frontend",
+            "description": "Web app built for a makeup artist using React, Flask and PostGreSQL. The site includes a blog, instagram-style portfolio and custom admin panel."
+        },
+        {
+            "name": ["Weather Web App"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/weather",
+            "description": "Web app that displays climate information for any city. This application was created with React."
+        },
+        {
+            "name": ["Weather Mobile App"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/Weather_mobile_app",
+            "description": "Mobile app version of the 'Weather Web App'. This application was created with React Native."
+        },
+        {
+            "name": ["Billboard Top 100 Songs Game"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/top_100_frontend",
+            "description": "Web app that creates a gessing-game from the current Billboard Top 100 Songs. This application utilizes React, Flask and SQLite."
+        },
+        {
+            "name": ["BlackJack Game"], 
+            "icon": [{"html": "<i class='fab fa-python fa-2x'></i>", "color": "#4B8BBE"}], 
+            "repository": "https://github.com/jmorfin23/blackjack",
+            "description": "Our beloved game of BlackJack, but created solely with Python. Give it a try."
+        },
+        {
+            "name": ["Tic Tac Toe Game"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/tic_tac_toe",
+            "description": "A classic game of tic-tac-toe create with React Native."
+        },
+        {
+            "name": ["Event Scheduler"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/full-stack-app-frontend",
+            "description": "Add an event, view it, delete it. This Web app allows the user to create and keep track of events. "
+        },
+        {
+            "name": ["Event Scheduler Mobile App"], 
+            "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
+            "repository": "https://github.com/jmorfin23/Event-scheduler_mobile",
+            "description": "A mobile version of the previous 'Event Scheduler' web app."
+        },
+        {
+            "name": ["Monster Dungeon Game"], 
+            "icon": [{"html": "<i class='fab fa-python fa-2x'></i>", "color": "#4B8BBE"}], 
+            "repository": "https://github.com/jmorfin23/monster_dungeon_game",
+            "description": "Don't let the monsters catch your character! You must run from the monsters and collect eggs. Another game created with Object oriented python."
+        },
+        {
+            "name": ["HangMan Game"], 
+            "icon": [{"html": "<i class='fab fa-python fa-2x'></i>", "color": "#4B8BBE"}], 
+            "repository": "https://github.com/jmorfin23/hangman",
+            "description": "Can't go wrong with playing hangman. A classic game built with Python. "
+        }
+    ]
+}
+
+
+
+

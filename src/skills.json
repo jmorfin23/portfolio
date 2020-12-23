@@ -1,49 +1,49 @@
 {
     "skills": [
         {
-            "skill": ["Javascript"], 
+            "name": ["Javascript"], 
             "icon": [{ "html":"<i class='fab fa-js fa-2x'></i>", "color": "#F0DB4F"}], 
-            "description": "this is a test description"
+            "description": "Advanced in writing clean and reusable JS code. Skilled with ES6 syntax, object-oriented JS, JQuery, AJAX, error handling, asyncronity and more. Comfortable in all stages of development-production."
         }, 
         {
-            "skill": ["Node.js"], 
+            "name": ["Node.js"], 
             "icon": [{"html": "<i class='fab fa-node-js fa-2x'></i>", "color": "#68A063"}], 
-            "description": "this is a test description"
+            "description": "Proficient in using node.js, express, and client-server functionality."
         }, 
         {
-            "skill": ["React"], 
+            "name": ["React"], 
             "icon": [{"html": "<i class='fab fa-react fa-2x'></i>", "color": "#61DBFB"}], 
-            "description": "this is a test description"
+            "description": "Extremely comfortable building efficient, reusable React components from scratch. Efficient in planning, building, testing and overall maintainability of frontend code."
         }, 
         {
-            "skill": ["Python", "Fask"], 
+            "name": ["Python", "Fask"], 
             "icon": [{"html": "<i class='fab fa-python fa-2x'></i>", "color": "#4B8BBE"}], 
-            "description": "this is a test description"
+            "description": "Proficient in Python and building full stack applications in Flask. Well versed in standard Python practices, and proficient in using libraries such as Pandas and NumPy."
         }, 
         {
-            "skill": ["SQL", "PostGreSQL"], 
+            "name": ["SQL", "PostGreSQL", "SQLite"], 
             "icon": [{"html": "<i class='fas fa-database fa-2x'></i>", "color": "#d3d3d3"}], 
-            "description": "this is a test description"
+            "description": "Skilled in designing relational databases and database integration as well as testing while utilizing SQLite."
         }, 
         {
-            "skill": ["HTML5", "CSS3"], 
+            "name": ["HTML5", "CSS3"], 
             "icon": [{"html": "<i class='fab fa-html5 fa-2x'></i>", "color": "#e34c26"}, {"html": "<i class='fab fa-css3-alt fa-2x'></i>", "color": "#53A7DC"}], 
-            "description": "this is a test description"
+            "description": "Expert at designing and building amazing frontend UI, responsive websites and creating animations."
         }, 
         {
-            "skill": ["NPM", "Yarn"], 
+            "name": ["NPM", "Yarn"], 
             "icon": [{"html": "<i class='fab fa-npm fa-2x'></i>", "color": "#BB443E"}, {"html": "<i class='fab fa-yarn fa-2x'></i>", "color": "#2188b6"}], 
-            "description": "this is a test description"
+            "description": "Skilled at managing project dependencies in the client and server."
         }, 
         {
-            "skill": ["AWS", "Heroku"], 
+            "name": ["AWS", "Heroku", "GitHub Pages"], 
             "icon": [{"html": "<i class='fab fa-aws fa-2x'>", "color": "#BB443E"}], 
-            "description": "this is a test description"
+            "description": "Seasoned in deploying web applications using Heroku and GitHub Pages. Comfortable using AWS technologies such as AWS S3."
         }, 
         {
-            "skill": ["Git"], 
+            "name": ["Git"], 
             "icon": [{"html": "<i class='fab fa-github fa-2x'>", "color": "#24292e"}], 
-            "description": "this is a test description"
+            "description": "Practiced and comfortable using version control software."
         }
     ]
 }

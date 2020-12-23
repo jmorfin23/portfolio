@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'; 
 import { AboutView } from './views/AboutView'; 
-import { ProjectsView } from './views/ProjectsView'; 
+import { PortfolioView } from './views/PortfolioView'; 
 import { ContactView } from './views/ContactView'; 
 import { SideBar } from './component/sidebar';
 import { ResumeView } from './views/ResumeView'; 
@@ -14,15 +14,13 @@ import { ResumeView } from './views/ResumeView';
 // 4. proper css formatting and using proper rules 
 // 5. pixels issue - use rem unless specific needs 
 
-// responsive issue DONE
-// add hamburger menu to top DONE
 // sidebar-hidden style change - could be confusing in the future 
 // add view-content class below 
-// resume changing sidebar width from 243 to 246 
 
 // Daily goal 
-// finish resume page and decide if i want a portfolio page or anther page. 
+// should keep printable resume? 
 // mr-1,2,3, css 
+
 class App extends Component {
   render() {
     return (
@@ -30,7 +28,7 @@ class App extends Component {
         <SideBar />
         <Switch>
           <Route exact path={"/about-me"} render={() => <AboutView /> }/>
-          <Route exact path={"/portfolio"} render={() => <ProjectsView /> } />
+          <Route exact path={"/portfolio"} render={() => <PortfolioView /> } />
           <Route exact path={"/resume"} render={() =>  <ResumeView /> }/>
           <Route exact path={"/contact"} render={() => <ContactView /> }/>
         </Switch>
