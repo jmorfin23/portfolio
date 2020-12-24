@@ -6,6 +6,7 @@ import { PortfolioView } from './views/PortfolioView';
 import { ContactView } from './views/ContactView'; 
 import { SideBar } from './component/sidebar';
 import { ResumeView } from './views/ResumeView'; 
+import { NotFound } from './component/not-found'; 
 
 // TODO: 
 // 1. border box issue 
@@ -17,9 +18,6 @@ import { ResumeView } from './views/ResumeView';
 // sidebar-hidden style change - could be confusing in the future 
 // add view-content class below 
 
-// Daily goal 
-// should keep printable resume? 
-// mr-1,2,3, css 
 
 class App extends Component {
   render() {
@@ -27,12 +25,12 @@ class App extends Component {
       <div className="site-wrapper">
         <SideBar />
         <Switch>
-          <Route exact path={"/about-me"} render={() => <AboutView /> }/>
+          <Route exact path={["/", "/about-me"]} render={() => <AboutView /> }/>
           <Route exact path={"/portfolio"} render={() => <PortfolioView /> } />
           <Route exact path={"/resume"} render={() =>  <ResumeView /> }/>
           <Route exact path={"/contact"} render={() => <ContactView /> }/>
+          <Route render={() => <NotFound /> } /> 
         </Switch>
-        {/* <Footer />  */}
       </div>
     );
   }
