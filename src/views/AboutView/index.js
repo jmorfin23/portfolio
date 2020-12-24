@@ -19,9 +19,9 @@ export class AboutView extends Component {
                   I enjoy building websites, making music, fitness and more. Check out my portfolio and resume
                   or if your interested in hiring me feel free to send me a message. 
                 </p>
-                <div className="mt-2 mb-2">
-                  <Button className="profile-btn-1 fs-1 mr-05" type="button"><Link to="/resume">Resume<i className="fas fa-angle-right ml-05"></i></Link></Button>
-                  <Button className="profile-btn-2 fs-1" type="button"><Link to="/contact">Send me a message<i className="fas fa-angle-right ml-05"></i></Link></Button>
+                <div className="mt-1 mb-2">
+                  <Button className="profile-btn-1 fs-1 mr-05 mt-1" type="button"><Link to="/resume">Resume<i className="fas fa-angle-right ml-05"></i></Link></Button>
+                  <Button className="profile-btn-2 fs-1 mt-1" type="button"><Link to="/contact">Send me a message<i className="fas fa-angle-right ml-05"></i></Link></Button>
                 </div>
             </div>
             <img className="profile-img" src={Jonathan} alt="Jonathan Morfin"></img>
