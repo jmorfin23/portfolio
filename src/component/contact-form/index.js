@@ -34,8 +34,7 @@ export class ContactForm extends Component {
         }; 
 
         this.setState({status: 'Sending...'})
-        console.log('testing...')
-        console.log(process.env.REACT_APP_CONTACT_EMAIL_API_URL);
+
         const response = await fetch(process.env.REACT_APP_CONTACT_EMAIL_API_URL, {
             method: "POST", 
             headers: {
