@@ -110,6 +110,9 @@ body {
 .pl-3 {
     padding-left: 3rem;
 }
+.padding-l-r-025 {
+    padding: 0 .25rem;
+}
 .padding-3 {
     padding: 3rem;
 }
@@ -180,7 +183,7 @@ button:hover {
 .card-container {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -204,12 +207,5 @@ button:hover {
     .pad-border-mobile {
         padding-bottom: 2rem;
         border-bottom: 1px solid var(--light-dark-blue);
-    }
-}
-
-/*     cards alignment during mobile view      */
-@media only screen and (max-width: 540px) {
-    .card-container {
-        justify-content: center;
     }
 }

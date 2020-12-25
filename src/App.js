@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'; 
 import { AboutView } from './views/AboutView'; 
@@ -19,8 +19,7 @@ import { NotFound } from './component/not-found';
 // add view-content class below 
 
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <div className="site-wrapper">
         <SideBar />
@@ -33,7 +32,6 @@ class App extends Component {
         </Switch>
       </div>
     );
-  }
 }
 
 export default App;

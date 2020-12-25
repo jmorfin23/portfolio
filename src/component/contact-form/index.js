@@ -1,6 +1,8 @@
 import React, {Component} from 'react'; 
 import './index.css'; 
 import { Button } from '../Ui/button'; 
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 export class ContactForm extends Component {
     constructor(props) {
@@ -12,20 +14,25 @@ export class ContactForm extends Component {
             subject: "", 
             message: "", 
             error: false, 
-            status: "Submit"
+            status: "Submit", 
+            token: ""
         }
 
         this.initialState = this.state
+
     }
 
     handleSendForm = async e => {
         e.preventDefault(); 
-        const { name, email, subject, message } = this.state; 
         
-        if (!name || !email || !subject || !message) {
+        const { name, email, subject, message, token } = this.state; 
+        
+        if (!name || !email || !subject || !message || !token) {
             return this.setState({error: true}); 
         }
         
+        this.setState({status: 'Sending...'})
+     
         const form = {
             name: name, 
             email: email, 
@@ -33,12 +40,11 @@ export class ContactForm extends Component {
             message: message
         }; 
 
-        this.setState({status: 'Sending...'})
-
         const response = await fetch(process.env.REACT_APP_CONTACT_EMAIL_API_URL, {
             method: "POST", 
             headers: {
-                'Content-Type': 'application/json' 
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }, 
             body: JSON.stringify(form)
         }); 
@@ -48,7 +54,8 @@ export class ContactForm extends Component {
         this.setState({status: res.status}); 
 
         //reset form
-        setTimeout(() => this.setState( this.initialState ), 3000);  
+        setTimeout(() => this.setState( this.initialState ), 3000); 
+
     }
 
     render() {
@@ -74,6 +81,13 @@ export class ContactForm extends Component {
                         <textarea className="padding-05 fs-1" onChange={e => this.setState({message: e.target.value})} name="message" value={message} rows="18" placeholder="Write your message here." type="text"></textarea>
                         {(error && !message) ? (<label className="form-error margin-top-xsm" htmlFor="name">Please fill out your message</label>): null}
                     </div>
+                    <div className="mb-05 padding-l-r-025">
+                        <ReCAPTCHA
+                            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                            onChange={token => this.setState({token: token})}
+                            onExpired={() => this.setState({token: ""})}
+                        />
+                    </div>
                     <div className="form-item">
                         <Button className="form-submit padding-05 fs-1" type="submit">{status}</Button>
                     </div>
@@ -81,5 +95,4 @@ export class ContactForm extends Component {
             </form>
         )
     }
-
 }

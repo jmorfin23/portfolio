@@ -7,7 +7,7 @@ import { NavLinks } from '../nav-links';
 import { HireMe } from '../hire-me'; 
 
 export const SideBar = () => {
-    const [toggle, setToggle] = useState(false); 
+    const [toggle, setToggle] = useState(true); 
     return(
         <header className={`sidebar-container padding-1${toggle ? " height-auto" : ""}`}>
             <div className="sidebar-heading">
