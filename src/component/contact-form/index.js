@@ -40,6 +40,7 @@ export class ContactForm extends Component {
             message: message
         }; 
 
+        // Send message 
         const response = await fetch(process.env.REACT_APP_CONTACT_EMAIL_API_URL, {
             method: "POST", 
             headers: {

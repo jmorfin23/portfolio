@@ -1,10 +1,9 @@
 import React from 'react'; 
 import './index.css'; 
-import PropTypes from 'proptypes'; 
 
-export const ToggleButton = ({ toggleNav }) => {
+export const ToggleButton = ({ ...props }) => {
     return(
-        <div className={`toggle-button`} onClick={() => toggleNav()}>
+        <div {...props} className={`toggle-button`} >
             <span></span>
             <span></span>
             <span></span>
@@ -12,6 +11,3 @@ export const ToggleButton = ({ toggleNav }) => {
     )
 };
 
-ToggleButton.propTypes = {
-    toggleNav: PropTypes.func.isRequired,
-}

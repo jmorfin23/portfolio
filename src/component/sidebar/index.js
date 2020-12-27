@@ -7,18 +7,18 @@ import { NavLinks } from '../nav-links';
 import { HireMe } from '../hire-me'; 
 
 export const SideBar = () => {
-    const [toggle, setToggle] = useState(true); 
+    const [toggle, setToggle] = useState(false); 
     return(
         <header className={`sidebar-container padding-1${toggle ? " height-auto" : ""}`}>
             <div className="sidebar-heading">
-                <ToggleButton toggleNav={() => setToggle(!toggle)} />
+                <ToggleButton onClick={() => setToggle(!toggle)} />
                 <h3 className="margin-auto">Jonathan Morfin</h3>
             </div>
             <div className={`sidebar-content${toggle ? " sidebar-hidden" : ""}`}>
                 <ProfileInfo /> 
                 <SocialLinks /> 
-                <NavLinks hideSideBar={() => setToggle(true)}/> 
-                <HireMe className="hire-dblue"/> 
+                <NavLinks onClick={() => setToggle(true)}/> 
+                <HireMe onClick={() => setToggle(true)} className="hire-dblue"/> 
             </div> 
         </header>
     )

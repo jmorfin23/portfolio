@@ -16,10 +16,12 @@ export const Card = ({ json }) => {
                 {name.map((name, index, arr) => name + (index === arr.length - 2 ? " &" : index === arr.length - 1 ? "" : ",")).join(" ")}
             </h3>
             <p className="mt-05">{description}</p>
-            <p className="mt-05 repository-link">{json.repository && (
-                <a href={json.repository}>View repository</a>
+            {json.repository && (
+                <p className="mt-05 repository-link">
+                    <a href={json.repository}>View repository</a>
+                </p>
             ) }
-            </p>
+            
         </div>
     );
 }
