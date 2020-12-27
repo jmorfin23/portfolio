@@ -9,9 +9,9 @@ import skills_json from '../../skills.json';
 export class AboutView extends Component {
   render() {
     return (
-        <div className="view-content"> 
+        <> 
           <section className="profile-heading padding-3">
-            <div className="profile-content fw-200">
+            <div className="profile-content">
               <h1 className="fs-25">Jonathan Morfin</h1>
               <div className="mt-05 fw-300 fs-15">Full Stack Developer</div>
                 <p className="mt-1">
@@ -24,11 +24,11 @@ export class AboutView extends Component {
                   <Button className="profile-btn-2 fs-1 mt-1" type="button"><Link to="/contact">Send me a message<i className="fas fa-angle-right ml-05"></i></Link></Button>
                 </div>
             </div>
-            <img className="profile-img" src={Jonathan} alt="Jonathan Morfin"></img>
+            <img className="profile-img padding-l-r-1" src={Jonathan} alt="Jonathan Morfin"></img>
           </section>  
 
           <section className="skills-container padding-3">
-            <div className="fw-200">
+            <div>
               <h1 className="skills-heading padding-1">What I do</h1>
               <p className="mt-1">I have experience building full stack applications for a variety of clients. Check out my skills below!</p>
             </div>  
@@ -41,7 +41,7 @@ export class AboutView extends Component {
               }
             </div>
           </section>
-        </div>
+        </>
     );
   }
 }

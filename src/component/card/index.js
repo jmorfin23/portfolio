@@ -15,7 +15,7 @@ export const Card = ({ json }) => {
             <h3 className="fw-400 mt-05">
                 {name.map((name, index, arr) => name + (index === arr.length - 2 ? " &" : index === arr.length - 1 ? "" : ",")).join(" ")}
             </h3>
-            <p className="fw-200 mt-05">{description}</p>
+            <p className="mt-05">{description}</p>
             <p className="mt-05 repository-link">{json.repository && (
                 <a href={json.repository}>View repository</a>
             ) }

@@ -23,12 +23,12 @@
         {
             "name": ["SQL", "PostGreSQL", "SQLite"], 
             "icon": [{"html": "<i class='fas fa-database fa-2x'></i>", "color": "#d3d3d3"}], 
-            "description": "Skilled in designing relational databases and database integration as well as testing while utilizing SQLite."
+            "description": "Skilled in designing relational databases, database integration and testing."
         }, 
         {
             "name": ["HTML5", "CSS3"], 
             "icon": [{"html": "<i class='fab fa-html5 fa-2x'></i>", "color": "#e34c26"}, {"html": "<i class='fab fa-css3-alt fa-2x'></i>", "color": "#53A7DC"}], 
-            "description": "Expert at designing and building amazing frontend UI's, responsive websites and creating animations."
+            "description": "Expert at designing and building amazing frontend UI's, responsive websites and animations."
         }, 
         {
             "name": ["NPM", "Yarn"], 

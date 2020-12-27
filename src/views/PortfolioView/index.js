@@ -6,11 +6,11 @@ import { HireMe } from '../../component/hire-me';
 
 export const PortfolioView = () => {
     return(
-        <div className="view-content">
+        <>
                 <section className="portfolio-heading text-centered padding-3">
                     <div className="padding-3">
                         <h1 className="fs-25">Portfolio</h1>
-                        <p className="mt-1 fw-200">
+                        <p className="mt-1">
                             Thank you for checking out my online portfolio. Here are some of the projects I&apos;ve worked on 
                             so feel free to browse and check them out online or on github!
                         </p>
@@ -26,6 +26,6 @@ export const PortfolioView = () => {
                         }
                     </div>
                 </section>
-        </div>
+        </>
     )
 };

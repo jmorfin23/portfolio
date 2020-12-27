@@ -8,28 +8,19 @@ import { SideBar } from './component/sidebar';
 import { ResumeView } from './views/ResumeView'; 
 import { NotFound } from './component/not-found'; 
 
-// TODO: 
-// 1. border box issue 
-// 2. transition issues 
-// 3. proper html boxes (section, nav, article, main...)
-// 4. proper css formatting and using proper rules 
-// 5. pixels issue - use rem unless specific needs 
-
-// sidebar-hidden style change - could be confusing in the future 
-// add view-content class below 
-
-
 const App = () => {
     return (
       <div className="site-wrapper">
         <SideBar />
-        <Switch>
-          <Route exact path={["/", "/about-me"]} render={() => <AboutView /> }/>
-          <Route exact path={"/portfolio"} render={() => <PortfolioView /> } />
-          <Route exact path={"/resume"} render={() =>  <ResumeView /> }/>
-          <Route exact path={"/contact"} render={() => <ContactView /> }/>
-          <Route render={() => <NotFound /> } /> 
-        </Switch>
+        <main className="view-content fw-200">
+          <Switch>
+            <Route exact path={["/", "/about-me"]} render={() => <AboutView /> }/>
+            <Route exact path={"/portfolio"} render={() => <PortfolioView /> } />
+            <Route exact path={"/resume"} render={() =>  <ResumeView /> }/>
+            <Route exact path={"/contact"} render={() => <ContactView /> }/>
+            <Route render={() => <NotFound /> } /> 
+          </Switch>
+        </main>
       </div>
     );
 }

@@ -8,7 +8,7 @@ import resume_json from '../../resume.json';
 // Showcasing my resume 
 export const ResumeView = () => {
     return(
-        <div className="view-content fw-200">
+        <>
             <div className="padding-3">
                 <section className="text-centered">
                     <h1 className="fs-25">Resume</h1>
@@ -21,6 +21,6 @@ export const ResumeView = () => {
                 </section>
                 <HireMe className="resume-hire-green"/> 
             </div>
-        </div>
+        </>
     )
 }; 

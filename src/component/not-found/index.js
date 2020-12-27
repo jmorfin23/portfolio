@@ -3,7 +3,7 @@ import "./index.css";
 
 export const NotFound = () => {
   return (
-    <section className="error-message view-content">
+    <section className="error-message">
       <h1 className="error-code">404</h1>
       <p className="error-description">Page not found</p>
       <a href="/" className="error-link">
