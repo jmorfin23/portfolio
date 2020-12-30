@@ -21,7 +21,6 @@ export const Card = ({ json }) => {
                     <a href={json.repository}>View repository</a>
                 </p>
             ) }
-            
         </div>
     );
 }
