@@ -1,46 +1,51 @@
-
 {
     "experience": {
         "title": "Experience",
         "job": [
             {
-                "date": "2020 - Present", 
+                "date": "Feb 2021 - Present",
+                "company": "Carnegie",
+                "job_title": "Full Stack Software Developer",
+                "description": "Developing web applications using Flask, JQuery, HTML, CSS. Performing essential data analysis in Oracle databases using SQL."
+            },
+            {
+                "date": "2020 - Present",
                 "company": "Freelancer",
-                "job_title": "Software Developer", 
+                "job_title": "Software Developer",
                 "description": "Designed/built a prototype application that interprets and classifies documents using an AI model. Planned and built a professional full stack artist web application using React.js, Flask, PostgreSQL, AWS & Heroku. Implements OAuth, emailing, blog feature, custom admin panel, third-party APIs and API security."
             },
             {
-                "date": "2019", 
+                "date": "2019",
                 "company": "Zara Consulting",
-                "job_title": "Software Developer", 
+                "job_title": "Software Developer",
                 "description": "Working directly with clients in communicating requirements Developing, designing, and deploying web applications build-in Python, Flask and React.js. Using React Native to transfer client products into mobile applications. Performed all job functions in an Agile-Waterfall environment. In charge of wireframe and all front end functionals using HTML5, CSS3, Javascript and React.js."
-            }, 
+            },
             {
-                "date": "2019", 
+                "date": "2019",
                 "company": "Coding Temple",
-                "job_title": "Software Developer", 
+                "job_title": "Software Developer",
                 "description": "Developed full-stack web applications using Python, Flask, SQL, HTML/CSS and React. Included in the applications built are custom designed relational databases, user role management, and salted hashing password encryption for site security. Used pandas library in Python for statistical analysis. Implemented third party APIs in applications such as SendGrid, Smarty Streets, and Braintree"
             }
         ]
-    }, 
+    },
     "items": [
         {
-            "category": "Education", 
-            "details": ["2014 - 2018", "Biology", "Umass Amherst"] 
-        }, 
+            "category": "Education",
+            "details": ["2014 - 2018", "Biology", "Umass Amherst"]
+        },
         {
-            "category": "Language", 
+            "category": "Language",
             "details": ["Javascript", "Python", "HTML5", "CSS3", "SQL"]
-        }, 
+        },
         {
-            "category": "Technology/Framework", 
+            "category": "Technology/Framework",
             "details": ["React.js & Redux", "Flask", "Node.js & Express", "REST API's", "React Native", "OAuth", "Heroku", "AWS"]
         }, {
-            "category": "Database", 
-            "details": ["PostGreSQL", "SQLite", "SQLAlchemy"] 
-        }, 
+            "category": "Database",
+            "details": ["PostGreSQL", "SQLite", "SQLAlchemy"]
+        },
         {
-            "category": "Tools", 
+            "category": "Tools",
             "details": ["Git", "Visual Studio", "Agile & Scrum"]
         }
     ]
