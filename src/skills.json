@@ -3,7 +3,7 @@
         {
             "name": ["Javascript"], 
             "icon": [{ "html":"<i class='fab fa-js fa-2x'></i>", "color": "#F0DB4F"}], 
-            "description": "Advanced in writing clean and reusable JS code. Skilled with ES6 syntax, object-oriented JS, JQuery, AJAX, error handling, asyncronity and more. Comfortable in all stages of development-production."
+            "description": "Advanced in writing clean and reusable JS code. Skilled with ES6 syntax, object-oriented JS, JQuery, AJAX, error handling, asyncronicity and more. Comfortable in all stages of development-production."
         }, 
         {
             "name": ["Node.js"], 
